@@ -6,7 +6,7 @@ Network_2DXv computes the angular-averaged spectral density of a two-phase netwo
 ## To run from the command line
 python3 Network_2DXv.py N a simname configtype tesstype binset (fname)
 
-N - square root of the number of particles in the system
+N - square root of the number of particles in the system\\
 a - Uniformly randomized lattice disorder parameter (leave 0 if not using a URL, otherwise use a > 0)
 beamw - Width of the rectangles from which the two-phase media is generated. Width is in the same units as the box side length.
 simname - User-defined string to name a particular calculation
