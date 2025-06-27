@@ -4,7 +4,7 @@
 Network_2DXv computes the angular-averaged spectral density of a two-phase network structure derived from a spatial tessellation of a point pattern. The point pattern must be in a square simulation box under periodic boundary conditions.
 
 ## To run from the command line
-python3 Network_2DXv.py N a simname configtype tesstype binset (fname)
+python3 Network_2DXv.py N a beamw simname configtype tesstype binset (fname)
 
 N - square root of the number of particles in the system\
 a - Uniformly randomized lattice disorder parameter (leave 0 if not using a URL, otherwise use a > 0)\
