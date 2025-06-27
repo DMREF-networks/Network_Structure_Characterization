@@ -30,4 +30,4 @@ Three files:\
 
 ## Exmaple files
 loadtest.txt contains a N = 100 point totally uncorrelated point pattern with a number desnity of 1.
-explot.py contains an *extremely* bare-bones script to visualize the output from this configuration.
+explot.py contains an *extremely* bare-bones script to visualize the output from this configuration if beamw was 0.1.
