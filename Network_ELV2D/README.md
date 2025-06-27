@@ -28,3 +28,6 @@ Three files:\
 
 The variance of the rows in the third file are taken after the fact to get the variance at a given window radius. This is done so that the variance can be easily computed across different realizations of the same system. 
 
+## Exmaple files
+loadtest.txt contains a N = 100 point totally uncorrelated point pattern with a number desnity of 1.
+explot.py contains an *extremely* bare-bones script to visualize the output from this configuration.
