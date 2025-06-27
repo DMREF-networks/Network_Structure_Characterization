@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = np.loadtxt("ld_N_10_beamw_???_loadtest_Xv.txt")
+data = np.loadtxt("ld_N_10_beamw_0.1_loadtest_Xv.txt")
 
 plt.plot(data[:,0], data[:,1])
 
