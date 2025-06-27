@@ -28,6 +28,6 @@ Three files:\
 2 - A .png of the two-phase material strucutre\
 3 - A two-column .txt file where column one contains the wavenumber and column two contains the spectral density values after the angular averaging and binning procedures. 
 
-##Exmaple files
+## Exmaple files
 loadtest.txt contains a N = 100 point totally uncorrelated point pattern with a number desnity of 1.
 explot.py contains an *extremely* bare-bones script to visualize the output from this configuration.
