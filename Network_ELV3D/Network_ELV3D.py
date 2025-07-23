@@ -3,6 +3,23 @@ import numpy as np
 import scipy as sp
 from numba import njit
 
+def restructure_array_numpy(reshaped):
+    output = np.empty((len(reshaped) * 6, 2), dtype=reshaped.dtype)
+    output[::6, 0] = reshaped[:, 0]
+    output[::6, 1] = reshaped[:, 1]
+    output[1::6, 0] = reshaped[:, 1]
+    output[1::6, 1] = reshaped[:, 2]
+    output[2::6, 0] = reshaped[:, 2]
+    output[2::6, 1] = reshaped[:, 3]
+    output[3::6, 0] = reshaped[:, 3]
+    output[3::6, 1] = reshaped[:, 0]
+    output[4::6, 0] = reshaped[:, 0]
+    output[4::6, 1] = reshaped[:, 2]
+    output[5::6, 0] = reshaped[:, 1]
+    output[5::6, 1] = reshaped[:, 3]
+    return output
+
+
 def remove_duplicate_rows(arr):
     dtype = [('min', arr.dtype), ('max', arr.dtype)]
     structured = np.empty(arr.shape[0], dtype=dtype)
@@ -79,7 +96,7 @@ def mindist(ep1, ep2, wind):
 
 def delaunay_graph_3d(points):
     # Perform Delaunay triangulation
-    delaunay = Delaunay(points)
+    delaunay = sp.spatial.Delaunay(points)
     triangles = np.array(delaunay.simplices)
 
     # Convert triangles to edges
